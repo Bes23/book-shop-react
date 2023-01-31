@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100;200;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@1,400;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Hahmlet';
+}
+
+/* Pagination */
+
+.pagination {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+  font-size: 1.2rem;
+  gap: 5px;
+  margin-top: 50px;
+}
+
+.page-num {
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.page-num:hover {
+  background-color: #34568B;
+  color: #fff;
+}
+
+.active {
+  background-color: #34568B;
+}
+
+@media only screen and (max-width: 550px) {
+  .pagination {
+    font-size: .6rem;
+  }
+  .page-num {
+    padding: 2px 4px;
+  }
+}
